@@ -151,8 +151,6 @@ d3.csv('driving.csv', d3.autoType)
         label.transition()
             .delay((d, i) => line(data.slice(0, i + 1)).length / l * (5000 - 125))
             .attr("opacity", 1);
-
-
     })
 
 
@@ -228,8 +226,6 @@ function build(){
             .attr("x", 145)
             .attr("dy", ".75em")
             .text("Cost per Gallon");
-
-    
 
         svg.append("g")
             .attr("fill", "#48C9B0")
